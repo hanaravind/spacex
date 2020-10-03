@@ -1,0 +1,21 @@
+.box {
+    background: #efefef;
+}
+.facetBlock {
+    max-width: 275px;
+}
+h2 {
+    margin-bottom: 15px;
+}
+.row , h2{
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+@media (max-width: 767px) {
+    .facetBlock {
+        max-width: unset;
+    }
+}
+
+

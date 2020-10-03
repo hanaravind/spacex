@@ -1,0 +1,30 @@
+<div class="spacexContainer">
+    <div class="row">
+        <div *ngFor="let space of spacexData" class="col-md-3 spacexLayout">
+            <div class="spaceImageContainer">
+                <img class="spacexImage" [src]="space.links.mission_patch_small" alt="spacex"/>
+            </div>
+            <div class="spacexDetails">
+                <b class="spacexTitle">{{space.mission_name}} #{{space.flight_number}}</b>
+                <div class="LaunchYear">
+                    <b >Launch Year: </b>
+                    <span>{{space.launch_year}}</span>
+                </div>
+                <div *ngIf="space.mission_id.length !== 0" class="spacexIds">
+                    <b>Mission Ids:</b>
+                    <ul class="spacexIdList">
+                        <li *ngFor="let id of space.mission_id">{{id}}</li>
+                    </ul>
+                </div>
+                <div class="sucessLaunch">
+                    <b >SuccussFul Launch:</b>
+                    <span>{{space.launch_success}}</span>
+                </div>
+                <div *ngIf="space.rocket.first_stage.cores[0].land_success" class="sucessLanding">
+                    <b >SuccussFul Landing: </b>
+                    <span>{{space.rocket.first_stage.cores[0].land_success}}</span>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
