@@ -1,6 +1,21 @@
 # spacex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This project was generated with [Angular CLI](https://github.com/hanaravind/spacex.git) version 9.1.0.
+
+Steps to clone from repository and run locally on browser
+
+ * Run the command - git clone `https://github.com/hanaravind/spacex.git`
+
+ * go to the project path by `cd spacex`
+
+ * Run `npm install` it will install all the dependencies
+
+ * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+
+
+## production server (Heroku)
+
+To view the hosted version of the app . Go to the url `https://demo-spacex.herokuapp.com/`.
 
 ## Development server
 
