@@ -25,6 +25,9 @@
                     <span>{{space.rocket.first_stage.cores[0].land_success}}</span>
                 </div>
             </div>
-        </div>        
+        </div>
+        <div *ngIf="spacexData.length === 0" class="col-md-9 noResultText" >
+            <h1>No Filters Found</h1>
+        </div>       
     </div>
 </div>

@@ -25,6 +25,13 @@
     }
 }
 
+.noResultText {
+    margin: 0 auto;
+    position: absolute;
+    top:45%;
+    right:10%;
+}
+
 @media (max-width: 1250px) and (min-width: 1024px) {
     .spacexContainer .spaceImageContainer {
         height: 150px;
@@ -39,6 +46,14 @@
     .spacexContainer .spaceImageContainer {
         height: unset;
         width: unset;
+    }
+
+    .noResultText {
+        margin: 0 auto;
+        text-align: center;
+        position: unset;
+        top:unset;
+        right: unset;
     }
 }
 

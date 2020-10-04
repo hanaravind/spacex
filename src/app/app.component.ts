@@ -8,6 +8,7 @@ import { BackendService } from './service/backend.service';
 export class AppComponent implements OnInit {
   spacexData;
   loading = false;
+  developer = 'Aravindhan SJ';
   constructor(private http: BackendService) {}
   ngOnInit(): void {
     this.http.getHttp().subscribe(data => {
