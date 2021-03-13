@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
     FacetComponent,
     SpaceComponent,
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

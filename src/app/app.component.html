@@ -1,13 +1,17 @@
 <div class="container-fluid box">
-    <h2>SpaceEx Launch programs</h2>
-    <div class="row">
-        <div class="col-md-3 col-12 facetBlock">
+    <header>
+        <h2>SpaceEx Launch programs</h2>
+    </header>
+    <main class="row">
+        <section class="col-md-3 col-12 facetBlock">
             <app-facet (facetValue)="getFilter($event)"></app-facet>
-        </div>
-        <div class="col-md-9 col-12">
-            <app-space [spacexData]="spacexData"></app-space>
-        </div>
-    </div>
-    <h5 class="dev_name">Developed by: {{developer}}</h5>
+        </section>
+        <aside class="col-md-9 col-12">
+            <app-space [spacexData]="spacexData" [dataLoaded]="dataLoaded"></app-space>
+        </aside>
+    </main>
+    <footer>
+        <h5 class="dev_name">Developed by: {{developer}}</h5>
+    </footer>
 </div>
 <router-outlet></router-outlet>

@@ -17,7 +17,7 @@
             height: auto;
             object-fit: contain;
             background: #efefef;
-            margin-top: 10px;
+            margin-top: 10px; 
         }
     }
     .spacexDetails {
@@ -30,6 +30,12 @@
     position: absolute;
     top:45%;
     right:10%;
+}
+
+.spinner-border {
+    position: absolute;
+    top: 50%;
+    right: 50%;
 }
 
 @media (max-width: 1250px) and (min-width: 1024px) {

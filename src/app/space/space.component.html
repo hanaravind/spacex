@@ -1,5 +1,8 @@
 <div class="spacexContainer">
-    <div class="row">
+    <div class="spinner-border" role="status" *ngIf="!dataLoaded">
+        <span class="sr-only">Loading...</span>
+      </div>
+    <div class="row" *ngIf="dataLoaded">
         <div *ngFor="let space of spacexData" class="col-md-3 spacexLayout">
             <div class="spaceImageContainer">
                 <img class="spacexImage" [src]="space.links.mission_patch_small" alt="spacex"/>
@@ -14,7 +17,7 @@
                     <b>Mission Ids:</b>
                     <ul class="spacexIdList">
                         <li *ngFor="let id of space.mission_id">{{id}}</li>
-                    </ul>
+                    </ul> 
                 </div>
                 <div class="sucessLaunch">
                     <b >SuccussFul Launch:</b>

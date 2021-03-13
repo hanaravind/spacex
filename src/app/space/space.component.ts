@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./space.component.scss']
 })
 export class SpaceComponent implements OnInit {
-  @Input() spacexData;
+  @Input() spacexData; 
+  @Input() dataLoaded;
 
   constructor() { }
 

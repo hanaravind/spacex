@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { HttpParams } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -8,19 +7,19 @@ import { HttpParams } from "@angular/common/http";
 export class BackendService {
 spacexEndpoint: string;
   constructor(private http: HttpClient) {
-    this.spacexEndpoint = 'https://api.spacexdata.com/v3/launches?limit=100';
+    this.spacexEndpoint = 'https://api.spacexdata.com/v3/launches?limit=100'
   }
 
   getHttp(value?, name?) {
     const searchParams = new URLSearchParams(this.spacexEndpoint);
     if (this.spacexEndpoint.includes(`&${name}=`)) {
-       searchParams.set(name, value);
-       this.spacexEndpoint = decodeURIComponent(searchParams.toString());
+       searchParams.set(name, value)
+       this.spacexEndpoint = decodeURIComponent(searchParams.toString())
     } else if (value){
-       this.spacexEndpoint += `&${name}=${value}`;
+       this.spacexEndpoint += `&${name}=${value}`
     } else {
-       this.spacexEndpoint = this.spacexEndpoint;
+       this.spacexEndpoint = this.spacexEndpoint
     }
-    return this.http.get(this.spacexEndpoint);
+    return this.http.get(this.spacexEndpoint)
   }
 }
