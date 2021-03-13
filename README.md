@@ -10,7 +10,7 @@ Steps to clone from repository and run locally on browser
 
  * Run `npm install` it will install all the dependencies
 
- * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+ * Run `npm run dev:ssr` for a dev server with server side rendering. Navigate to `http://localhost:4200/`.
 
 
 ## production server (Heroku)
