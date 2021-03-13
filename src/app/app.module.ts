@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     SpaceComponent,
   ],
   imports: [ 
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule
